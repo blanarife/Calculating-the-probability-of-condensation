@@ -13,6 +13,6 @@ The user may select certain nodes to have a fixed value. This will affect the pr
 Any existing node may be interrogated.
 The file "creds.json" needs to contain the credentials to connect to Google Sheet.
 
-Used libraries:
+Used libraries on Raspberry Pi Pico W:
 lcd1602.py
 DHT22.py
