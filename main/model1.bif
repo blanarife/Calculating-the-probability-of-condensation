@@ -1,0 +1,21 @@
+network "Model1" {
+}
+
+variable "A" {
+    type discrete [ 2 ] { A0, A1 };
+}
+
+variable "B" {
+    type discrete [ 2 ] { B0, B1 };
+}
+
+probability (A) {
+    table 0.6, 0.4;
+}
+
+probability (B | A) {
+    (A0) 0.7, 0.3;
+    (A1) 0.2, 0.8;
+}
+
+
